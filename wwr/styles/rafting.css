@@ -156,6 +156,54 @@ nav a:hover {
 .contact {
     align-items: center;
     text-align: center;
+    margin: 20px 20px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map {
+    flex: 1;
+    max-width: 50%;
+
+}
+
+.contact-form {
+    border: #060606 solid 2px;
+    padding: 1rem;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form {
+    display: flex;
+
+}
+
+form label {
+
+    text-align: left;
+}
+
+form input {
+    flex: 1;
+    padding: 8px;
+
+}
+
+form button {
+    padding: 0.8rem;
+    border-radius: 8px;
 }
 
 /* ---------------- SECTIONS ---------------- */
