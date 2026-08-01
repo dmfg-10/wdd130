@@ -53,14 +53,19 @@
                 <input type="email" id="email" name="email" placeholder="example@example.com"
                   required>
                 <label for="purpose">Message purpose</label>
-                <input type="radio" id="purpose" name="General">General Inquiry</input>
-                <input type="radio" id="purpose" name="Reservation">Reservation Question</input>
-                <input type="radio" id="purpose" name="Suggestion">Website Suggestion</input>
+                <div class="radio-group">
+
+                    <input type="radio" id="purpose" name="General">General Inquiry</input>
+                    <input type="radio" id="purpose" name="Reservation">Reservation Question</input>
+                    <input type="radio" id="purpose" name="Suggestion">Website Suggestion</input>
+                </div>
                 <label for="message">Message*:</label>
-                <input for="message" id="message" name="user_mesage" required>
-                <label for="suscription">Pleas Suscribe me to the monthlyly newsletter</label>
-                <input type="checkbox" id="suscription" name="suscription"> <button
-                  type="Submit">Let´s get in contact!</button>
+                <textarea for="message" id="message" name="user_mesage" required
+                  rows="6"></textarea>
+                <label for="suscription">Please Suscribe me to the monthlyly newsletter</label>
+                <input type="checkbox" id="suscription" name="suscription">
+                <p>Fields marked with an asterisk (*) are required.</p>
+                <button type="Submit">Let´s get in contact!</button>
 
 
             </form>
