@@ -185,14 +185,17 @@ nav a:hover {
 
 form {
     display: flex;
-    background-color: #cbc1c1;
+    background-color: #bbbac9;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 form p {
-    color: #851515;
+    border-color: #060606;
+    color: #c90b0b;
+    -webkit-text-stroke: 0.5px black;
+    paint-order: stroke fill;
 }
 
 form label {
@@ -212,6 +215,8 @@ form input {
 form button {
     padding: 0.8rem;
     border-radius: 8px;
+    font-size: 20px;
+    font-family: Arial;
 }
 
 form textarea {
