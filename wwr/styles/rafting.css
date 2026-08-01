@@ -221,6 +221,8 @@ form textarea {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    color: #060606;
+
 }
 
 .radio-group input[type="radio"] {
