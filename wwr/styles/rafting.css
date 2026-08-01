@@ -192,9 +192,9 @@ form {
 }
 
 form p {
-    border-color: #060606;
-    color: #8A0000;
-    -webkit-text-stroke: 0.5px black;
+
+    color: #060606;
+    -webkit-text-stroke: 0.5px rgb(255, 0, 0);
     paint-order: stroke fill;
 }
 
