@@ -1,8 +1,8 @@
-:root{
-    --primary-color:#0B4F6C;
-    --secondary-color:#01BAEF;
-    --accent1-color:#FBFBFF;
-    --accent2-color:#20BF55;
+:root {
+    --primary-color: #0B4F6C;
+    --secondary-color: #01BAEF;
+    --accent1-color: #FBFBFF;
+    --accent2-color: #20BF55;
 
     --heading-font:'Merriweather', serif;
     --body-font:'Roboto', sans-serif;
