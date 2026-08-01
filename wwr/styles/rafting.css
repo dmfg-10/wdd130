@@ -191,6 +191,10 @@ form {
 
 }
 
+form p {
+    color: #851515;
+}
+
 form label {
 
     text-align: left;
