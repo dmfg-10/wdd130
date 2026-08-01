@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/poll.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+
+<body>
+    <header>
+        <h1>WWD 103 | HTML Form - User Poll </h1>
+    </header>
+
+    <main>
+
+        <form>
+            <label class="legend" for="fullname">Enter your full name:</label>
+            <input type="text" name="fullname" id="fullname" required placeholder="Joseph Smith">
+
+            <label class="legend" for="email">Enter your Email address:</label>
+            <input type="email" name="email" id="email" required placeholder="Example@ex.com">
+
+            <label class="legend" for="userbrowser">What is your favorite internet browser?</label>
+            <select name="browser" id="userbrowser" size="2">
+                <option value="">Other</option>
+                <option value="chrome">Chrome</option>
+                <option value="brave">Brave</option>
+                <option value="safari">Safari</option>
+                <option value="edge">Edge</option>
+            </select>
+
+            <label class="legend" for="userspet">Do you have a household pet?</label>
+            <input type="checkbox" name="userspet" id="userpet">
+
+            <label class="legend" for="feedback">List the places you have lived:</label>
+            <textarea name="feedback" id="feedback" rows="4"
+              placeholder="American Fork Utah, Bogotá Colombia, Saint Luis Missuri"></textarea>
+            <button type="submit">Submit Poll</button>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>

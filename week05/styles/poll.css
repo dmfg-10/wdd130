@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+    background: #fff;
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(206, 90, 90);
+    padding: 5%;
+
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.8rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem
+}
+
+.legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input,
+button,
+select,
+textarea {
+    padding: 0.1rem;
+    border-radius: 8px;
+
+}
