@@ -42,7 +42,7 @@
             <div class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d33459.98051694858!2d-69.95217372406817!3d-4.198548753838969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sco!4v1785555692677!5m2!1ses-419!2sco"
-                  allowfullscreen="" loading="lazy" height="350px"
+                  allowfullscreen="" loading="lazy" height="350"
                   strict-origin-when-cross-origin></iframe>
             </div>
 
@@ -54,13 +54,18 @@
                   required>
                 <label for="purpose">Message purpose</label>
                 <div class="radio-group">
-
-                    <input type="radio" id="purpose" name="General">General Inquiry</input>
-                    <input type="radio" id="purpose" name="General">Reservation Question</input>
-                    <input type="radio" id="purpose" name="General">Website Suggestion</input>
+                    <label>
+                        <input type="radio" id="purpose" name="General">General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" id="purpose" name="General">Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" id="purpose" name="General">Website Suggestion
+                    </label>
                 </div>
                 <label for="message">Message*:</label>
-                <textarea for="message" id="message" name="user_mesage" required
+                <textarea  id="message" name="user_mesage" required
                   rows="6"></textarea>
                 <label for="suscription">Please Suscribe me to the monthlyly newsletter</label>
                 <input type="checkbox" id="suscription" name="suscription">
@@ -72,7 +77,7 @@
         </div>
 
         <div class="team">
-            <h3>Our team members!</h3>
+            <h2>Our team members!</h2>
 
             <figure>
                 <img src="images/carl.jpg" alt="Team leader Carl">
