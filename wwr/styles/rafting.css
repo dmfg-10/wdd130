@@ -213,7 +213,7 @@ form p {
 
     color: #060606;
     -webkit-text-stroke: 0.5px rgb(255, 0, 0);
-    paint-order: stroke fill;
+    
 }
 
 form label {
