@@ -22,7 +22,7 @@
 body {
     font-family: var(--body-font);
     color: #333;
-    background: rgb(228, 227, 227);
+    background: rgb(255, 255, 255);
 }
 
 header,
@@ -212,7 +212,6 @@ form {
 form p {
 
     color: #060606;
-    -webkit-text-stroke: 0.5px rgb(255, 0, 0);
     
 }
 
