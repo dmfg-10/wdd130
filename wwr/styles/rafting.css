@@ -8,7 +8,8 @@
     
     --body-font: lucida, sans-serif;
 
-    --max-width: 1000px;
+    --max-width: 100%;
+    --max-radius: 15px;
 }
 
 /* Reset */
@@ -29,7 +30,7 @@ header,
 main,
 footer {
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* ---------------- HEADER ---------------- */
@@ -40,6 +41,7 @@ header {
     align-items: center;
     padding: 15px;
     background: var(--primary-color);
+
      
 }
 
@@ -49,11 +51,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 header img {
     justify-self: center;
     border-radius: 20%;
+    
 }
 
 nav ul {
@@ -71,7 +75,7 @@ nav a {
 
 nav a:hover {
     background: var(--secondary-color);
-    border-radius: 5px;
+    border-radius: var(--max-radius);
 }
 
 /* ---------------- HERO ---------------- */
@@ -82,15 +86,22 @@ nav a:hover {
 .hero::before { content: ""; 
     position: absolute; 
     inset: 0; 
-    background-color: rgba(80, 80, 80, 0.5);
+    background-color: rgba(55, 63, 87, 0.694);
+   
+   
     z-index: 1; 
 } 
     
 .hero img { display: block;
-     width: 100%; 
+    
+    
+     width: 100%;
+     
+     object-fit: cover;
 } 
     
 .hero h1 { position: absolute; 
+    font-size: 4rem;
     top: 20px; 
     width: 100%; 
     text-align: center;
@@ -109,21 +120,38 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.85); 
     padding: 20px; 
     border: 2px solid #060606;
-    border-radius: 10px; 
+    border-radius: var(--max-radius); 
     z-index: 2;
 }
         
 .hero article img { float: right; 
     margin-left: 15px;
      width: 180px; 
-     border-radius: 10px;
+     border-radius: var(--max-radius);
 
 }
 
 .hero article p {
-    font-size: 18px;
+    font-size: 25px;
     font-family: var(--body-font);
     padding: 10px;
+}
+.hero-text p{
+    position: absolute;
+    color: #060606;
+    font-size: 20px;
+
+    font-family: var(--body-font);
+    padding: 1%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+    z-index: 2; 
+    background: rgba(255, 255, 255, 0.868);
+    border-radius: var(--max-radius);
+
 }
 
 /* ---------------- TEAM ---------------- */
@@ -160,7 +188,7 @@ nav a:hover {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: var(--max-radius)    ;
 }
 
 .team figcaption {
@@ -204,7 +232,7 @@ nav a:hover {
 form {
     display: flex;
     background-color: #bbbac9;
-    border-radius: 10px;
+    border-radius: var(--max-radius);
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -225,13 +253,13 @@ form label {
 form input {
     flex: 1;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: var(--max-radius);
 
 }
 
 form button {
     padding: 0.8rem;
-    border-radius: 8px;
+    border-radius: var(--max-radius);
     font-size: 20px;
     font-family: Arial;
     background-color: #5796d9;
@@ -239,8 +267,7 @@ form button {
 
 form textarea {
     padding: 0.8rem;
-    border-radius: 8px;
-
+    border-radius: var(--max-radius);
 }
 
 .radio-group {
@@ -264,7 +291,9 @@ section {
     padding: 20px;
     margin: 20px 0;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: var(--max-radius);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 section h2 {
@@ -282,17 +311,29 @@ section:first-of-type { display: grid;
     gap: 20px;
     align-items: center;
 }
+section p {
+    
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-article p { font-size: 18px; 
+article p { 
     line-height: 1.5; 
-    text-align: justify; 
+    text-align: center; 
     margin-bottom: 15px; }
 
 /* ----------------Adventure--------------- */
 
 section:last-of-type { display: flex; 
     justify-content: space-between; 
-    gap: 15px; flex-wrap: wrap; } 
+    gap: 15px;
+    flex-wrap: wrap;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+} 
+
     
 section:last-of-type h2 { width: 100%; }
     
@@ -308,6 +349,45 @@ section:last-of-type figcaption
     { margin-top: 10px; 
         font-weight: bold; 
     }
+
+/* ---------------- about ---------------- */
+
+.about {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    padding: 1%;
+    z-index: 2;
+}
+
+.about img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--max-radius);
+}
+.about figcaption{
+    background-color: #bbbac9;
+    align-items: center;
+    position: absolute;
+    
+    margin-left: 10px;
+    text-align: center;
+    color: #060606;
+    font-size: 1.5rem;
+    border-radius: var(--max-radius);
+    
+}
+
+
+
 
 /* ---------------- FOOTER ---------------- */
 
