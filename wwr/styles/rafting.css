@@ -1,8 +1,8 @@
 :root {
     --primary-color: #0B4F6C;
-    --secondary-color: #01BAEF;
+
     --accent1-color: #FBFBFF;
-    --accent2-color: #199ac8;
+
     --text-color: rgb(0, 0, 0);
     --heading-font: Helvetica, sans-serif;
     --body-font: Arial, sans-serif;
@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -86,7 +86,7 @@ h1 {
     padding: 1.5rem;
     border: 2px solid black;
     border-radius: var(--max-radius);
-    height: 175px;
+    height: 15rem;
     align-items: center;
 
 }
