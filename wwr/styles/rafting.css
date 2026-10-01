@@ -130,15 +130,16 @@ nav a:hover {
     object-fit: cover;
 }
 
+
 .hero h1 {
     position: absolute;
     font-size: 4rem;
-    top: 2rem;
+    top: 20px;
     width: 100%;
     text-align: center;
     background: rgba(11, 79, 108, 0.8);
     color: white;
-    padding: 1rem;
+    padding: 15px;
     font-family: var(--heading-font);
     z-index: 2;
 
@@ -244,13 +245,154 @@ section:last-of-type figcaption {
     font-weight: bold;
 }
 
+
+
+/* ---------------- TEAM ---------------- */
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    background-color: var(--accent1-color);
+    margin-top: 2%;
+
+}
+
+.team h2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #0f0e0e;
+    font-size: 30px;
+
+}
+
+.team figure {
+    margin: 0;
+    text-align: center;
+
+}
+
+.team img {
+
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--max-radius);
+}
+
+.team figcaption {
+    margin: 8px;
+    font-size: 16px;
+    color: #060606;
+}
+
+.contact {
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+/* ---------------- FORM ----------------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map {
+    flex: 1;
+    max-width: 50%;
+    margin: 0.8rem;
+
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.contact-form {
+    border: #060606 solid 2px;
+    padding: 1rem;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #bbbac9;
+    border-radius: var(--max-radius);
+    font-family: var(--body-font);
+
+}
+
+form p {
+
+    color: #060606;
+
+}
+
+form label {
+
+    text-align: left;
+    font-size: 20px;
+    color: #060606;
+}
+
+form input {
+    flex: 1;
+    padding: 8px;
+    border-radius: var(--max-radius);
+
+}
+
+form button {
+    padding: 0.8rem;
+    border-radius: var(--max-radius);
+    font-size: 20px;
+    font-family: Arial;
+    background-color: #5796d9;
+}
+
+form textarea {
+    padding: 0.8rem;
+    border-radius: var(--max-radius);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #060606;
+
+}
+
+.radio-group input[type="radio"] {
+    flex: initial;
+    width: auto;
+    margin: 0;
+}
+
 /* ---------------- FOOTER ---------------- */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     border-top: 1px solid #999;
     margin-top: 15px;
 }
