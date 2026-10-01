@@ -6,7 +6,7 @@
     --text-color: rgb(0, 0, 0);
     --heading-font: Helvetica, sans-serif;
     --body-font: Arial, sans-serif;
-    --max-width: 100%;
+    --max-width: 1200px;
     --max-radius: 1rem;
 }
 
@@ -46,20 +46,6 @@ article {
 
 .socialmedia a {
     text-decoration: none;
-}
-
-h1 {
-    position: absolute;
-    font-size: 4rem;
-    top: 1.2rem;
-    width: 100%;
-    padding: 0.9rem;
-    text-align: center;
-    background: var(--primary-color);
-    opacity: 0.85;
-    color: var(--accent1-color);
-    font-family: var(--heading-font);
-
 }
 
 /* ---------------- HEADER ---------------- */
@@ -103,7 +89,7 @@ nav a {
 }
 
 nav a:hover {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     border-radius: var(--max-radius);
 }
 
@@ -258,6 +244,9 @@ section:last-of-type figcaption {
     border: 2px solid black;
     background-color: var(--accent1-color);
     margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: var(--max-radius);
 
 }
 
@@ -306,11 +295,10 @@ section:last-of-type figcaption {
     margin: 0 auto;
 }
 
-.map {
+.map, .contact-form {
     flex: 1;
     max-width: 50%;
     margin: 0.8rem;
-
 }
 
 .map iframe {
@@ -357,13 +345,24 @@ form input {
     border-radius: var(--max-radius);
 
 }
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: var(--max-radius);
+}
+form input[type="checkbox"] {
+    width: auto;
+    align-self: flex-start;
+}
 
 form button {
     padding: 0.8rem;
     border-radius: var(--max-radius);
     font-size: 20px;
-    font-family: Arial;
-    background-color: #5796d9;
+    font-family: var(--body-font);
+    background-color: rgb(53, 174, 244);
+
 }
 
 form textarea {
